@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black">
       <div className="col-span-1 my-auto mx-auto w-[300px h-auto lg:w-[400px]">
-        <img src={heroimage} alt="heor image" />
+        <img src={heroimage} alt="heorimage" />
       </div>
       <div className="col-span2 px-5 my-auto">
         <h1 className="text-white text-4xl sm:tex-5xl lg:txt-8xl font-extraabold">
@@ -30,11 +30,21 @@ const Hero = () => {
         <p className="text-white sm:text-lg my-6 lg:text-xl">
             My name is Shreenarayan Shrestha and I have 2+ years experience in web development.
         </p>
-        <div className="my-8">
-            <a href="/" className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white">Download CV</a>
+        <div className="my-8 flex flex-col md:flex-row items-center md:justify-start">
+  <a 
+    href="/" 
+    className="px-6 py-3 w-full md:w-auto rounded-xl md:mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white text-center"
+  >
+    Download CV
+  </a>
+  <a 
+    href="/" 
+    className="mt-4 md:mt-0 px-6 py-3 w-full md:w-auto rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink-500 text-white hover:border-none text-center"
+  >
+    Contact
+  </a>
+</div>
 
-            <a href="/" className="px-6 py-3 w-full rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink500 text-white hover:border-none">Contact</a>
-        </div>
       </div>
     </div>
   );
